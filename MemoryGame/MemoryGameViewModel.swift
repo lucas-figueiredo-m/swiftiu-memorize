@@ -10,11 +10,11 @@ import SwiftUI
 class MemoryGameViewModel: ObservableObject {
     static var themeList: [MemoryGameModel<String>.Theme] = [
         MemoryGameModel<String>.Theme(name: "Cars", emojiSet: ["🚗", "🚕", "🚙", "🚌", "🚎", "🏎️", "🚓", "🚑", "🚒", "🚐", "🛻", "🚚", "🚛", "🚜", "🛴", "🚲", "🛵", "🏍️", "🛺", "🚡", "🚠", "🚅", "🚈", "🚂"], numberOfPairs: 3, color: .red),
-        MemoryGameModel<String>.Theme(name: "Fruits", emojiSet: ["🍏", "🍎", "🍐", "🍊", "🍋", "🍌", "🍉", "🍇", "🍓", "🫐", "🍈", "🍒", "🍑", "🥭", "🥥", "🥝", "🍅", "🥑"], numberOfPairs: 4, color: .red),
-        MemoryGameModel<String>.Theme(name: "Flags", emojiSet: ["🇺🇳", "🇦🇫", "🇿🇦", "🇦🇱", "🇩🇪", "🇦🇩", "🇦🇴", "🇦🇮", "🇦🇶", "🇦🇬", "🇸🇦", "🇩🇿", "🇦🇷", "🇦🇲", "🇮🇴", "🇦🇼", "🇦🇺", "🇦🇹", "🇦🇿", "🇧🇸", "🇧🇩", "🇧🇧", "🇧🇭", "🇧🇪", "🇧🇿", "🇧🇯", "🇧🇲", "🇧🇾", "🇧🇴", "🇧🇦", "🇧🇼", "🇧🇷"], numberOfPairs: 12, color: .red),
-        MemoryGameModel<String>.Theme(name: "Faces", emojiSet: ["😁", "😇", "😂", "🤩", "😭", "😡", "😨", "🤡"], numberOfPairs: 10, color: .red),
-        MemoryGameModel<String>.Theme(name: "Sky", emojiSet: ["🪐", "🌞", "🌜", "🌎", "☄️", "🌈", "⛅️", "⛈️", "❄️"], numberOfPairs: 5, color: .red),
-        MemoryGameModel<String>.Theme(name: "Animals", emojiSet: ["🐶", "🐭", "🐰", "🦊", "🐻", "🐼", "🐸", "🐵", "🦐", "🐳", "🐥", "🐨"], numberOfPairs: 8, color: .red),
+        MemoryGameModel<String>.Theme(name: "Fruits", emojiSet: ["🍏", "🍎", "🍐", "🍊", "🍋", "🍌", "🍉", "🍇", "🍓", "🫐", "🍈", "🍒", "🍑", "🥭", "🥥", "🥝", "🍅", "🥑"], numberOfPairs: 4, color: .blue),
+        MemoryGameModel<String>.Theme(name: "Flags", emojiSet: ["🇺🇳", "🇦🇫", "🇿🇦", "🇦🇱", "🇩🇪", "🇦🇩", "🇦🇴", "🇦🇮", "🇦🇶", "🇦🇬", "🇸🇦", "🇩🇿", "🇦🇷", "🇦🇲", "🇮🇴", "🇦🇼", "🇦🇺", "🇦🇹", "🇦🇿", "🇧🇸", "🇧🇩", "🇧🇧", "🇧🇭", "🇧🇪", "🇧🇿", "🇧🇯", "🇧🇲", "🇧🇾", "🇧🇴", "🇧🇦", "🇧🇼", "🇧🇷"], numberOfPairs: 12, color: .green),
+        MemoryGameModel<String>.Theme(name: "Faces", emojiSet: ["😁", "😇", "😂", "🤩", "😭", "😡", "😨", "🤡"], numberOfPairs: 10, color: .purple),
+        MemoryGameModel<String>.Theme(name: "Sky", emojiSet: ["🪐", "🌞", "🌜", "🌎", "☄️", "🌈", "⛅️", "⛈️", "❄️"], numberOfPairs: 5, color: .black),
+        MemoryGameModel<String>.Theme(name: "Animals", emojiSet: ["🐶", "🐭", "🐰", "🦊", "🐻", "🐼", "🐸", "🐵", "🦐", "🐳", "🐥", "🐨"], numberOfPairs: 8, color: .yellow),
     ]
     
     static func createInitialMemoryGame() -> MemoryGameModel<String> {
@@ -47,8 +47,8 @@ class MemoryGameViewModel: ObservableObject {
         0
     }
     
-    var cardsTheme: String {
-        theme.name
+    var cardsTheme: MemoryGameModel<String>.Theme {
+        theme
     }
     
     // MARK: - Intent(s)

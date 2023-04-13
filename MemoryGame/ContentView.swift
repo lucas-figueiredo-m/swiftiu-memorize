@@ -22,7 +22,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             HStack {
-                Text(viewModel.cardsTheme).font(.system(size: 40))
+                Text(viewModel.cardsTheme.name).font(.system(size: 40))
                 Spacer()
                 Text("Score: \(viewModel.score)").font(.system(size: 25))
             }
@@ -31,6 +31,7 @@ struct ContentView: View {
                 LazyVGrid(columns: [GridItem(.adaptive(minimum: 85))]) {
                     ForEach(viewModel.cards) { card in
                         MemoryCard(card: card)
+                            .foregroundColor(viewModel.cardsTheme.color)
                             .onTapGesture {
                                 viewModel.choose(card)
                             }
