@@ -16,6 +16,7 @@
 		61013EFA29CE38F200D408B3 /* MemoryGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61013EF929CE38F200D408B3 /* MemoryGameUITestsLaunchTests.swift */; };
 		61CDF36F29E1BD6900107DE0 /* MemoryGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CDF36E29E1BD6900107DE0 /* MemoryGameModel.swift */; };
 		61CDF37129E1CCAE00107DE0 /* MemoryGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CDF37029E1CCAE00107DE0 /* MemoryGameViewModel.swift */; };
+		61DB708229E7833200CF8DB9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 61DB708129E7833200CF8DB9 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		61013EF929CE38F200D408B3 /* MemoryGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		61CDF36E29E1BD6900107DE0 /* MemoryGameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameModel.swift; sourceTree = "<group>"; };
 		61CDF37029E1CCAE00107DE0 /* MemoryGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameViewModel.swift; sourceTree = "<group>"; };
+		61DB708129E7833200CF8DB9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		61013ECF29CE38F100D408B3 = {
 			isa = PBXGroup;
 			children = (
+				61DB708129E7833200CF8DB9 /* README.md */,
 				61013EDA29CE38F100D408B3 /* MemoryGame */,
 				61013EEC29CE38F200D408B3 /* MemoryGameTests */,
 				61013EF629CE38F200D408B3 /* MemoryGameUITests */,
@@ -239,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61DB708229E7833200CF8DB9 /* README.md in Resources */,
 				61013EE429CE38F200D408B3 /* Preview Assets.xcassets in Resources */,
 				61013EE029CE38F200D408B3 /* Assets.xcassets in Resources */,
 			);
