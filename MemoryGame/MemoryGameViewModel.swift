@@ -44,7 +44,7 @@ class MemoryGameViewModel: ObservableObject {
     }
     
     var score: Int {
-        0
+        model.score
     }
     
     var cardsTheme: MemoryGameModel<String>.Theme {
